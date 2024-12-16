@@ -45,9 +45,9 @@ This is optional, since the visual features are stored in the `.h5` files and th
     - **`*_llava16.py`**: Generates frame-level captions for videos.
     - **`caption_summizer.ipynb`**: Generates video-level summaries based on captions.
     - **`caption_embedding.ipynb`**: Extracts textual features.
-- **`context_eval.py`**: Executes Experiment 2 as detailed in the project report.
 - **`results.ipynb`**: The results of **SenSum** and figures.
 - **`main.py` folder**: Runs experiments. Results are saved in the `log` folder.
+- **`rewards.py` folder**: Contains visual rewards and the semantic reward.
 
 
 ### 4. Train
