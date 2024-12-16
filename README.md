@@ -16,7 +16,11 @@ With the exponential growth of video data, video summarization has become crucia
 ---
 
 ## Results
-The results of **SenSum** and figures (generated summary, importantce score, reward curves) for experiments can be viewed and obtained by running the code in `results.ipynb`.
+Experiment results of **SenSum** are stored under **`log/our_results` folder**.
+To test the results, you can run `results_test.sh` by loading model parameters from `.pth.tar`, the test results will be stored under **`log/test_results` folder**.
+
+The average F-score performance of **SenSum** and figures (generated summary, importantce score, reward curves) for experiments can be viewed and obtained by running the code in `results.ipynb`.
+
 
 ## How to Run the Project
 
@@ -45,9 +49,13 @@ This is optional, since the visual features are stored in the `.h5` files and th
     - **`*_llava16.py`**: Generates frame-level captions for videos.
     - **`caption_summizer.ipynb`**: Generates video-level summaries based on captions.
     - **`caption_embedding.ipynb`**: Extracts textual features.
+- **`main.py`**: Runs experiments. Results are saved in the `log` folder.
+- **`rewards.py`**: Contains visual rewards and the semantic reward.
+- **`log` folder**: Stores experiments results.
+    - **`our_results` folder**: Stores experiments results of **SenSum** in the report.
+    - **`test_results` folder**: Stores test results.
 - **`results.ipynb`**: The results of **SenSum** and figures.
-- **`main.py` folder**: Runs experiments. Results are saved in the `log` folder.
-- **`rewards.py` folder**: Contains visual rewards and the semantic reward.
+
 
 
 ### 4. Train
