@@ -16,8 +16,8 @@ With the exponential growth of video data, video summarization has become crucia
 ---
 
 ## Results
-Experiment results of **SenSum** are stored under **`log/our_results` folder**.
-To test the results, you can run `results_test.sh` by loading model parameters from `.pth.tar`, the test results will be stored under **`log/test_results` folder**.
+Experiment results of **SenSum** are stored under `log/our_results` folder.
+To test the results, you can run `results_test.sh` by loading model parameters from `.pth.tar`, the test results will be stored under `log/test_results` folder.
 
 The average F-score performance of **SenSum** and figures (generated summary, importantce score, reward curves) for experiments can be viewed and obtained by running the code in `results.ipynb`.
 
@@ -32,12 +32,12 @@ conda activate rl
 ```
 
 ### 2. Prepare datasets
-Please download the preprocessed datasets files `.h5` [here](https://drive.google.com/drive/folders/1VtyGJePG2vfsTLPtcOjb3oGSMdCQW9Gn?usp=sharing) and place them under **`datasets` folder**.
+Please download the preprocessed datasets files `.h5` [here](https://drive.google.com/drive/folders/1VtyGJePG2vfsTLPtcOjb3oGSMdCQW9Gn?usp=sharing) and place them under `datasets` folder.
 
 **Optional:**
-You can download datasets with original videos [here](https://drive.google.com/drive/folders/1sbZZalh43n6fiSxWt_SIGgv72bt4rdoG) (`SumMe.zip` and `tvsum50_ver_1_1.tgz`) (from [Summarizer](https://github.com/sylvainma/Summarizer) project) and place them under **`dataset_img` folder**. After extracting the frames of the videos with `FFmpeg`, you can use **`exp_frame_select.ipynb`** under the folder to downsample the videos.
+You can download datasets with original videos [here](https://drive.google.com/drive/folders/1sbZZalh43n6fiSxWt_SIGgv72bt4rdoG) (`SumMe.zip` and `tvsum50_ver_1_1.tgz`) (from [Summarizer](https://github.com/sylvainma/Summarizer) project) and place them under `dataset_img` folder. After extracting the frames of the videos with `FFmpeg`, you can use `exp_frame_select.ipynb` under the folder to downsample the videos.
 
-This is optional, since the visual features are stored in the `.h5` files and the captions and textual features are provided in **`dataset_img2text` folder**.
+This is optional, since the visual features are stored in the `.h5` files and the captions and textual features are provided in `dataset_img2text` folder.
 
 
 ### 3. Code Structure
