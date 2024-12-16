@@ -31,7 +31,7 @@ conda activate rl
 Please download the preprocessed datasets files `.h5` [here](https://drive.google.com/drive/folders/1VtyGJePG2vfsTLPtcOjb3oGSMdCQW9Gn?usp=sharing) and place them under **`datasets` folder**.
 
 **Optional:**
-You can download datasets with original videos [here](https://drive.google.com/drive/folders/1sbZZalh43n6fiSxWt_SIGgv72bt4rdoG) (`SumMe.zip` and `tvsum50_ver_1_1.tgz`) and place them under **`dataset_img` folder**. After extracting the frames of the videos with `FFmpeg`, you can use **`exp_frame_select.ipynb`** under the folder to downsample the videos.
+You can download datasets with original videos [here](https://drive.google.com/drive/folders/1sbZZalh43n6fiSxWt_SIGgv72bt4rdoG) (`SumMe.zip` and `tvsum50_ver_1_1.tgz`) (from [Summarizer](https://github.com/sylvainma/Summarizer) project) and place them under **`dataset_img` folder**. After extracting the frames of the videos with `FFmpeg`, you can use **`exp_frame_select.ipynb`** under the folder to downsample the videos.
 
 This is optional, since the visual features are stored in the `.h5` files and the captions and textual features are provided in **`dataset_img2text` folder**.
 
@@ -51,12 +51,17 @@ This is optional, since the visual features are stored in the `.h5` files and th
 
 
 ### 4. Train
-To train, you can run:
+To train the model, you can run:
+
+**TVSum**
 ```bash
 python python main.py -d datasets/eccv16_dataset_tvsum_google_pool5.h5 -s datasets/tvsum_splits.json -m tvsum --gpu 0 --save-dir log/test/tvsum-split0-e60 --split-id 0 --verbose --save-results --max-epoch 60 --rnn-cell gru --text_embedding './dataset_img2text/text_embedding/tvsum/llava-v1.6-mistral-7b-hf/v1/mpnet/'
 ```
 
-
+**SumMe**
+```bash
+python main.py -d datasets/eccv16_dataset_summe_google_pool5.h5 -s datasets/summe_splits.json -m summe --gpu 0 --save-dir log/test/summe-split0-e60 --split-id 0 --verbose --save-results --max-epoch 60 --rnn-cell gru --text_embedding './dataset_img2text/text_embedding/summe/llava-v1.6-mistral-7b-hf/v1/mpnet/'
+```
 
 ---
 
