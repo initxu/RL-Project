@@ -67,4 +67,4 @@ python main.py -d datasets/eccv16_dataset_summe_google_pool5.h5 -s datasets/summ
 
 
 ## Repositories utilized in this project
-This project is based on the implementations of DN and detailed in the following repositories: [](), [](). 
+This project is based on the implementations of DR-DSN and DSR-RL detailed in the following repositories: [DR-DSN](https://github.com/KaiyangZhou/pytorch-vsumm-reinforce), [DSR-RL](https://github.com/phaphuang/DSR-RL). 
