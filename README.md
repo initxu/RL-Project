@@ -65,3 +65,6 @@ python main.py -d datasets/eccv16_dataset_summe_google_pool5.h5 -s datasets/summ
 
 ---
 
+
+## Repositories utilized in this project
+This project is based on the implementations of DN and detailed in the following repositories: [](), [](). 
