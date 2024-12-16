@@ -11,6 +11,8 @@ This repository contains the code and resources (data) for my ELENE6885 Reinforc
 
 ## Introduction
 With the exponential growth of video data, video summarization has become crucial for generating concise yet informative summaries. Reinforcement learning (RL)-based solutions have regained attention by formulating video summarization as a sequential decision-making problem. Existing RL-based methods either rely on frame-level clustering, ignoring overall video content, or depend on labeled data. We propose SenSum, a content-aware RL-based solution that incorporates LLMs to effectively utilize both visual and textual information with unsupervised learning. By integrating visual rewards and a designed semantic reward derived from textual information, SenSum effectively enhance RL-based frame selection. Experiments on two public datasets show that SenSum outperforms state-of-the-art RL-based solutions by up to 5.3\%.
+
+
 ---
 
 ## Results
@@ -53,8 +55,6 @@ To train, you can run:
 ```bash
 python python main.py -d datasets/eccv16_dataset_tvsum_google_pool5.h5 -s datasets/tvsum_splits.json -m tvsum --gpu 0 --save-dir log/test/tvsum-split0-e60 --split-id 0 --verbose --save-results --max-epoch 60 --rnn-cell gru --text_embedding './dataset_img2text/text_embedding/tvsum/llava-v1.6-mistral-7b-hf/v1/mpnet/'
 ```
-This experiment uses a local model, making it feasible for machines with a GPU of 8GB or more. The backend engine used is **Ollama**. 
-
 
 
 
