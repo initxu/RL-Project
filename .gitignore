@@ -1,6 +1,7 @@
 # Custom
 test_code/
 log/
+__pycache__
 
 # OS generated files #
 ######################
