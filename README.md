@@ -1,4 +1,4 @@
-# SenSum: Enhance Unsupervised Video Summarization with Language-based Semantic Reward 
+# SumCap: Enhance Unsupervised Video Summarization with Language-based Semantic Reward 
 
 ## Overview
 This repository contains the code and resources (data) for my ELENE6885 Reinforcement Learning project. The project investigates the effectiveness of a language-based semantic reward in video summarization.
@@ -10,16 +10,16 @@ This repository contains the code and resources (data) for my ELENE6885 Reinforc
 
 
 ## Introduction
-With the exponential growth of video data, video summarization has become crucial for generating concise yet informative summaries. Reinforcement learning (RL)-based solutions have regained attention by formulating video summarization as a sequential decision-making problem. Existing RL-based methods either rely on frame-level clustering, ignoring overall video content, or depend on labeled data. We propose SenSum, a content-aware RL-based solution that incorporates LLMs to effectively utilize both visual and textual information with unsupervised learning. By integrating visual rewards and a designed semantic reward derived from textual information, SenSum effectively enhance RL-based frame selection. Experiments on two public datasets show that SenSum outperforms state-of-the-art RL-based solutions by up to 5.3\%.
+With the exponential growth of video data, video summarization has become crucial for generating concise yet informative summaries. Reinforcement learning (RL)-based solutions have regained attention by formulating video summarization as a sequential decision-making problem. Existing RL-based methods either rely on frame-level clustering, ignoring overall video content, or depend on labeled data. We propose SumCap, a content-aware RL-based solution that incorporates LLMs to effectively utilize both visual and textual information with unsupervised learning. By integrating visual rewards and a designed semantic reward derived from textual information, SumCap effectively enhance RL-based frame selection. Experiments on two public datasets show that SumCap outperforms state-of-the-art RL-based solutions by up to 5.3\%.
 
 
 ---
 
 ## Results
-Experiment results of **SenSum** are stored under `log/our_results` folder.
+Experiment results of **SumCap** are stored under `log/our_results` folder.
 To test the results, you can run `results_test.sh` by loading model parameters from `.pth.tar`, the test results will be stored under `log/test_results` folder.
 
-The average F-score performance of **SenSum** and figures (generated summary, importantce score, reward curves) for experiments can be viewed and obtained by running the code in `results.ipynb`.
+The average F-score performance of **SumCap** and figures (generated summary, importantce score, reward curves) for experiments can be viewed and obtained by running the code in `results.ipynb`.
 
 
 ## How to Run the Project
@@ -52,9 +52,9 @@ This is optional, since the visual features are stored in the `.h5` files and th
 - **`main.py`**: Runs experiments. Results are saved in the `log` folder.
 - **`rewards.py`**: Contains visual rewards and the semantic reward.
 - **`log` folder**: Stores experiments results.
-    - **`our_results` folder**: Stores experiments results of **SenSum** in the report.
+    - **`our_results` folder**: Stores experiments results of **SumCap** in the report.
     - **`test_results` folder**: Stores test results.
-- **`results.ipynb`**: The results of **SenSum** and figures.
+- **`results.ipynb`**: The results of **SumCap** and figures.
 
 
 
