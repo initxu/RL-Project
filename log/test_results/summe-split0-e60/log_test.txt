@@ -1,0 +1,11 @@
+==========
+Args:Namespace(dataset='datasets/eccv16_dataset_summe_google_pool5.h5', split='datasets/summe_splits.json', split_id=0, metric='summe', input_dim=1024, hidden_dim=512, num_layers=2, rnn_cell='gru', lr=1e-05, weight_decay=1e-05, max_epoch=5, stepsize=30, gamma=0.1, num_episode=5, beta=0.01, seed=1, gpu='0', use_cpu=False, evaluate=True, save_dir='log/test_results/summe-split0-e60', resume='./log/our_results/summe-split0-e60/summe_model_epoch_60_split_id_0-gru.pth.tar', verbose=False, save_results=False, reward_mode=1, text_embedding='./dataset_img2text/text_embedding/summe/llava-v1.6-mistral-7b-hf/v1/mpnet/')
+==========
+Currently using GPU 0
+Initialize dataset datasets/eccv16_dataset_summe_google_pool5.h5
+# total videos 25. # train videos 20. # test videos 5
+Initialize model
+Loading checkpoint from './log/our_results/summe-split0-e60/summe_model_epoch_60_split_id_0-gru.pth.tar'
+Evaluate only
+==> Test
+Average F1-score 48.5%
